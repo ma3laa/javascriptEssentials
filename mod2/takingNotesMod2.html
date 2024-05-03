@@ -87,6 +87,91 @@
     Understanding Variables:
         
         Variables hold information.
+        Spacing + white space doesnt matter.
+        // A lot of the content is this part is already known to me so I will not be adding too much.
+
+        Cool example:
+                
+        var para = document.getElementsByTagName("p");
+        console.log(para);
+
+        para.innerHTML = "here is a new value"; //replaces the paragraph tag to that.
+    
+        
+        Sometimes variables will need to contain multiple values simultaneously which is referred to as an array.
+        Arrays can be declared in various ways
+                Long hand:
+                    var multiValues = [];
+                    var multiValues = new Array();
+                    var multiValues = Array();
+                    var multiValues = Array(5);
+                
+                Short hand:
+                    var multiValues [50, 60, "text", 14, "moretext"]
+        
+        Arrays are simply variables that hold multiple values with no theoretical limit.
+        You can request a specific value for sisplay or modification using the index
+                multiValues[2] - would call the 3rd item in the array
+        
+        
+        Properties define information about an array such as the Length property
+        Methods define executable code and funtionality that belong to the array or object
+            - Reverse() - sorts but in reverse
+            - Join() - meshes all of the arrays indexes together into one string
+            - Sort() - sorts alphanumerically
+        
+        Length property useful for, for loops
+
+
+    Working with operators:
+        Arithmetic operators:
+            + - * / 
+                add subtract multiply divide
+            %  
+                modulus
+        
+            Increment
+                ++
+            Decrement
+                --
+
+        Assignment operators:
+            +=
+            -=
+            *=
+            /=
+             =
+        Equality operators:
+            == (equals)
+            === (strictly equals)
+            != (not equal)
+            !== (not equal value or not equal value type)
+        Conditional operaators:
+            < (less than)
+            <= (^or equal to)
+            > (greater than)
+            >= (^or equal to)
+        
+        Ternary operator:
+            Uses the syntax (condition)?True:False
+
+            example of how it would be done otherwise:
+                var playerOne = 500;
+                var playerTwo = 600;
+
+                if (playerOne > playerTwo) {
+                    var highscore = playerOne
+                } else {
+                    var highscore = playerTwo
+                }
+
+            example of it being done with ternary operator:
+                
+                var highscore = (playerOne > playerTwo) ? playerOne : playerTwo;
+
+        
+
+
 
 
 
