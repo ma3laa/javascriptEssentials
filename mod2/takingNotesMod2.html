@@ -250,7 +250,79 @@
                 }
             }
 
+         
             
+            more example:
+
+                function myFunction(a, b) {
+                    return a * b;
+                }
+
+                var x = myFunction(4, 3) * 2;
+                console.log(x); // will return 24
+
+            
+                function myFunction (a,b) {
+                    return arguments.length;
+                }
+
+                myFunction(3,4); 
+
+                var txt = myFunction.toString();
+                console.log(txt);  // returns 2
 
 
---> 
+                function myFunction(x,y) {
+                    return x * y
+                }
+
+                myFunction(3); // returns NaN (3*undefined = not a number)
+
+
+                function checkValues(x,y) {
+                    if (y === undefined) {
+                        y = 0;
+                    }
+                    return x * y
+                }
+                checkValues(3); // 3 * 0
+
+
+
+                function findMax() {
+                    var i;
+                    var maax = -Infinity;
+                    for (i = 0; i < arguments.length; i++) {
+                        max = arguments[i];
+                    }
+                    return max;
+                }
+
+                x = findMax (1, 123, 500, 115, 44, 88);
+
+            Object:
+                var myObject = {
+                    firstName:"John",
+                    lastName:"Smith",
+                    fullName: function() {
+                        return this.firstName + " " + this.lastName;
+                    }
+                }
+                myObject.fullNamee();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->             
+                
