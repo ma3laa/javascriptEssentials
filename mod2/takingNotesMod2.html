@@ -311,11 +311,59 @@
                 myObject.fullNamee();
 
 
+    Understanding Types and Objects:
+        - Most programming languages require you to declare variables using a particular type which tells the programming engine whaat data type to expect.
+        - JavaScript is different in that it is a "loosely typed" language and doesn't really care the type of object its dealing with in most cases.
+        - Numbers in JavaScript do not have the intricacies that are present in other languages such as decimal, integer, large integer, floating point, etc
+        - All numbers in JavaScript are assumed to be floating point integers which could cause a problem
+        but since massive numeric calculations aren't usually performed in client-side code its not an issue
+        
+        var a = 1;
+        var b = 12.2;
+        var c = 12.324;
 
+        - Numbers in string are considered string (yada yada yada)
+        
+        Math:
 
+        var x = 200.6
+        var y = Math.round(x); // 201
 
+        var a = 200, b = 10000, c = 4;
+        var biggest = Math.max(a,b,c);
+        var smallest = Math.min(a,b,c);
 
+        var x = 0xFF; // Will print 255, "0x" tells JS that you want the value of a Hexadecimal
 
+        Math.ceil  // Always rounnds up
+        Math.floor // Always rounds down
+
+        .toString() // turns input into string
+        .toExponential() //turns input into exponential
+
+        How to get around double quotes and special characters:
+            var y = "We are the so-called "Vikings" from the north."
+
+            var x = 'It\'s alright';
+            var y = "We are the so-called \"Vikings\" from the north."
+        
+        
+        String properties:
+            Length - the primary property that you will use which simply returns the length of the string
+        
+        String methods:
+            charAt() - trying to see where a particular char is
+            Match() - find a matching word
+            Replace() - replaces a word with another one
+            Search()
+            Slice() or subString()
+            toLowerCase()
+            Trim() - trims part off of the string value
+            toUpperCase()
+            
+        
+
+    
 
 
 
