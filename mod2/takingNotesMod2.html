@@ -360,6 +360,76 @@
             toLowerCase()
             Trim() - trims part off of the string value
             toUpperCase()
+
+        Dates:
+            new Date() //uses current date
+            new Date(milliseconds) //since 01/01/1970
+            yadaayadaa
+
+            var d = new Date("2015-03-31, Mar 31 2015, 121212435353");
+
+            date methods:
+                getDate() - day as number
+                getDay() - weekday as number
+                getFullYear() - four digit year
+                getHours() - get the hour
+                getMinutes() - get the minutes
+                getMonth() - get the month
+                getTime() - milliseconds
+
+                var d = new Date();
+                console.log(d);
+                d.toUTCString();
+                d.toDateString();
+                
+                You can also "setDate"
+
+            
+            Example to help understand objects (if you are unsure):
+            Objects have properties(attributes) and methods(actions)
+                Consider a real life object like pizza
+                    All pizza objects have properties
+                        Toppings
+                        Crust
+                        Size
+                        etc.
+                    They have methods associated with them as well
+                        Freeze 
+                        Cook 
+                        Prepare
+            
+            
+            Nearly everything in JavaScript is an object
+                Booleans can be objects
+                Numbers can be objects
+                Strings can be objects
+                Dates are always objects
+                Maths are always objects
+                Regular expressions are always objects
+                Arrays are always objects
+                Functions are always objects
+                Objects are objects
+
+            Basically everything except for primitive vaalues are objects but even those can be created as objects
+            
+            Objects are simply variables containing variables
+                Variables can only contain a single vaalue
+                Objects can contain multiple values in name:value pairs
+
+                var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+                the name:value pairs are referred to as properties
+                Methods are actions that can be performed on objects
+                    An object property that contains a function definition 
+
+            function person(first, last, age, eye){
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+            }
+            var myFather = new person("John", "Doe", 50, "blue");
+            var myMother = new person("Jane", "Doe", 50, "green");
             
         
 
