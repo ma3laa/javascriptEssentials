@@ -335,7 +335,7 @@
 
         var x = 0xFF; // Will print 255, "0x" tells JS that you want the value of a Hexadecimal
 
-        Math.ceil  // Always rounnds up
+        Math.ceil  // Always rounds up
         Math.floor // Always rounds down
 
         .toString() // turns input into string
@@ -431,9 +431,47 @@
             var myFather = new person("John", "Doe", 50, "blue");
             var myMother = new person("Jane", "Doe", 50, "green");
             
-        
 
-    
+
+            var myFather = new person("John", "Doe", 50, "blue");
+
+            for (x in myFather) {
+                txt += myFather[x];
+            }
+
+            //will print "JohnDoe50blue"
+
+            myFather.nationality = "English"
+
+            // adds English to the end
+
+            delete myFather.personality;
+
+            // removes from the list
+
+            
+            Object methods are actions that can be performed on objects
+            Essentially methods are properties that contain a function definition
+            You create object methods using this syntax
+                methodName :function(){executable code}
+            You can access the method using this syntax
+                objectName.methodName()
+            
+            Every JavaScript object has a prototype and the prototype is also an object
+                New objects inherit their properties and methods from their prototype
+                Objects created using an object literal or with new Object() inherit from the Object.prototype
+                Objects created from a particularobject like new Date() would inherit from the Date prototype
+
+            You can create object prototypes to then use in creating additional objects and you do so using an object constructor function
+
+            You can add properties or methods
+                To existing objects
+                To all existing objects of a specific type
+                To an object prototype
+
+            Adding to objects only changes the object in question but adding to the prototype will modify new objects created using that prototype
+
+
 
 
 
