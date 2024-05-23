@@ -1,0 +1,78 @@
+<!--
+    MODULE 3 - GETTING A HANDLE ON THE DOM
+
+    Introduction to the Document Object Model (DOM)
+    Accessing DOM elements
+    Changing DOM elements
+    Creating DOM elements
+    Responding to Events on the page
+
+
+
+    Introduction to the Document Object Model (DOM):
+
+    The JavaScript code that we write does not operate in vacuum but attached to HTML web pages
+    The web page is the script upon which we are working so we must be able to reach into the page to get information and have the page respond back to our code
+    Understanding the DOM is the way to do that, it is an incredibly important part of understanding the functionality of JavaScript
+
+    What is the DOM?
+    Its not a language
+    Its not a part of JavaScript
+    Its a fairly vague term
+
+    Web definition: "The Document Object Model is an application programming interface that defines logical structure of well formed an XML and HTML documents"
+
+    Document - is the web page itself
+    Object - refers to the objects that are created based on the HTML structure
+    Model - a consistent way to approach the various objects
+
+
+    Accessing DOM elements:
+
+    There are multiple ways of finding and accessing DOM elements which is the first step to dealing with the HTML DOM
+    If you want to manipulate the HTML elements you must first locate them
+    The key is understanding "where" in the DOM is the item that you wish to grab hold of as well as the critical question "Is it unique?"
+
+    Options:
+        document.getElementById
+        document.getElementByTagName
+        document.getElementByClassName
+        document.querySelectorAll - CSS selectors
+
+
+    Example of modifying title on a webpage
+
+    document.getElementById("mainTitle").innerHTML = "Hello World!"
+
+    This will change the mainTitle content associated id to "Hello World!"
+    
+
+    Once you have the element you can access individual attributes using the getAttribute() method
+    This method will allow you to access the attributes for any element on the page
+
+    myElement.getAttribute("align");
+
+    
+    document.getElementById("Malaysia").getAttribute("src");
+    //finds the id content and grabs the source location
+    // ^^method to find it on the page, ^^method to access a property (src)
+
+    
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
