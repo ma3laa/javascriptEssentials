@@ -59,6 +59,35 @@
 
     
 
+    Changing DOM elements:
+
+    Accessing DOM elements is the first step but often we would ike to modify these eements either entirely or in part, such as attributes
+    One such way of changingelements is to modify the content which is performed using the innerHTML property
+    Another option is to modify attributes
+    
+    myElement.setAttribute("align", "left");
+    //                      name     value
+    // name = what you want to modify
+    // value = what you want to modify it to
+
+
+    Another way in which the HTML can be changed is to actuallly modify the style that is used using CSS properties
+
+    Any CSS styles can be modified on page load or based on events on the page
+        The key is to use the CSS property names with the (-) character
+            Font-family becomes fontFamily
+            Border-style becomes borderStyle
+            Background-color becomes backgroundColor
+        Using setAttribute("style","color:blue"); would also be supported and can use the (-)
+
+        <script>
+            document.getElementById("p2").style.color = "blue";
+        </script>
+
+        // p2 text now becomes blue
+
+        
+
 
     
     
