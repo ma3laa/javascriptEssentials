@@ -87,8 +87,101 @@
         // p2 text now becomes blue
 
         
+    Creating DOM elements:
+
+    Although the innerHTML property can be used to add content to a page its not the cleanest method available with plenty of chance for error
+    
+    Instead you can create elements within the DOM and once created add a text node to those elements
+    
+    This results in a more precise and better way of modifying page content which always involves two steps
+        Create the element
+        Add the element to the right place in the document
+
+    
+    var newElement = document.createElement("li");
+    myElement.appendchild(newElement);
+
+    The next step is either
+        Access the innerHTML property of the element we just created to add content
+        Create a new text node and attach to the element(more precise)
+
+    var myText = document.createTextNode("new list item text");
+    newElement.appendchild(myText);
+    
+    
+    Example:
+        (This does make sense) (In the example there is a li id called books)
+
+        var myListItem = document.createElement("li");
+        var myTextNode = document.createTextNode("The Hobbit");
+        myListItem.appendChild(myTextNode);
+
+        var books = document.getElementById("books");
+        books.appendChild(myListItem);
+
+        // This piece of code added "The Hobbit" to the list 
+
+        Using "myElement.insertBefore()" allows you to insert the child
 
 
+
+
+    Responding to Events:
+
+    JavaScript is supposed to control the behaviour of the page and its interactivity with the user which means that our code should be able to respond to actions that are taken on the page
+
+    This is where events and event listeners come into play
+       - You don't cause the events they are occurring all the time
+       - You choose which of these events that you want to respond to
+       - You write an event listener in order to handle those particular events and respond the way that you would like
+    
+    Three ways to react to events:
+        Write the JavaScript code directly into the HTML
+        Specify the element and event you want tot handle and write a function
+        Use the addEventListener() function
+
+
+    
+    The first option is a simple option and is often done but really not recommended
+        It mixes the HTML code and the JavaScript
+        Its not very portable
+        Generally not a good idea
+
+    <button onclick='alert("Hello world!");'>Run some JavaScript</button>
+
+
+    The second option is often the best and involves identifying the element you want to act upon and the event that you would like to respond to
+        The element is referenced by using a variable
+        The event is chosen from the list of possible events
+        An anonymous function is created that contains the code that you want to run
+    
+    myElement.onclick = function() {
+        //Code goes here
+    };
+
+
+    The third option uses the "addEventListener()" method
+    Parameters
+        The event you want to respond to minus the word on
+        The function that you want to call
+        True or False
+
+    document.addEventListener('click', myFunction, False);
+
+
+    There are many events that you can respond to:
+        Onclick
+        Onload
+        Onunload
+        Onchange
+        Onmouseover
+        Onmouseout
+        Onmouseup
+        Onmousedown
+        Onfocus
+        onblur
+
+    
     
     
 
