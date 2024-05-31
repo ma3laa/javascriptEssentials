@@ -176,25 +176,47 @@
         Onchange
         Onmouseover
         Onmouseout
-        Onmouseup
-        Onmousedown
+        Onmouseup - When not clicking down
+        Onmousedown - When clicking down
         Onfocus
         onblur
 
-    
-    
-    
+-->
+<!doctype HTML>
+<html>
+    <body>
+
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:blue;width:120px;height:20px;padding:40px;">Mouse over me</div>
+
+        <script> 
+            function mOver(obj) {
+                obj.innerHTML = "Thank you"
+            }
+
+            function mOut(obj) {
+                obj.innerHTML = "Mouse over me"
+            }
+        </script>
+
+        
+        
+        
+        
 
 
+    </body>
+</html>
 
+<!-- 
 
+    There are times when we would like to behaviour on a page automatically controlled based on a time lapse
+    Though not technically events they are very similar in their function
+    Two built in functions will provide this capability quite easily in JavaScript
+        setTimeout()
+        setInterval()
 
+    setTimeout(myFunction, 5000) // setTimeout interval is in milliseconds
 
-
-
-
-
-
-
+    setInterval(changeImage, 5000) //also in milliseconds
 
 -->
