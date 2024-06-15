@@ -29,4 +29,34 @@
         - Can be obtained using a Content Delivery Network (CDN)
         
     
+    To begin using jQuery you either download it localaly or use a CDN
+        Local jQuery files are preferred on production websites for speed and reliability
+        CDN is perfect for development, testing and learning
+    To use jQuery, put it in <script src="pathing of file"></script>
+    
+
+    jQuery Syntax
+        The syntax is tailored for selecting HTML elements aand the performing actions on those elements
+
+    $(selector).action()
+
+    $(this).hide() - hides current object
+    $("p").hide() - hides paragraphs
+    $(".test").hide() - hides class
+    $("#test").hide() - hides ID
+
+
+    A common problem when programming JavaScript has to do with scripts running before the page is loaded which sometimes prevents
+    the scripts from gaining access to HTML elements on the page
+
+    jQuery has a function called 'ready()' that is designed to take care of that, as it waits for the pages to be ready (all HTML elements loaded)
+
+    Essentially you would just place the code inside the ready function
+
+    $(document).ready( function () {
+        alert("Helo World");
+    });
+
+
+
 -->
